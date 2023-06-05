@@ -1,0 +1,4 @@
+Hello Hello world!
+I Am from Python
+So I Love Python
+Just new text from python

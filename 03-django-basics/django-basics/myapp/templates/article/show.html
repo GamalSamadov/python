@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="display-5 my-3">
+    {{ article.title }}
+</h1>
+
+<blockquote class="blockquote">
+    <p>{{ article.content }}</p>
+</blockquote>
+
+{% endblock content %}

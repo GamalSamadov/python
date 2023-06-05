@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="display-5 my-3">
+    The Article Was deleted!
+</h1>
+
+<p>
+    <a href="{% url 'article_list' %}" class="btn btn-primary btn-lg">Go Back</a>
+</p>
+
+{% endblock content %}
