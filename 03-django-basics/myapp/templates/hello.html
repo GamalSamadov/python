@@ -1,0 +1,15 @@
+<h1>Hello world! From Template</h1>
+<p>My name is: {% if name %} {{ name }} {% endif %} </p>
+
+<ul>
+    {% for category in categories reversed %}
+    <li> {{ category }}</li>
+
+    {% empty %}
+    <li>Sorry, there is no categories!</li>
+    {% endfor %}
+</ul>
+
+{# Filters #}
+<h3> {{ 'hsoub academy'|title }} </h3>
+

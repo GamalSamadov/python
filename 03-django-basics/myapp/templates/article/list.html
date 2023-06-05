@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="display-5 my-3">
+    Atricles
+</h1>
+
+
+{% for article in object_list %}
+<div class="card my-2">
+    <div class="card-body">
+        <div class="card-title">
+            {{ article.title }} {{ article.author.name }}
+        </div>
+        <div class="card-text">
+            {{ article.content }}
+        </div>
+        <a class="btn btn-primary btn-sm" href="{% url 'article_view' article.id %}"> Show </a>
+        <a class="btn btn-secondary btn-sm" href="{% url 'article_update' article.id %}"> Edit </a>
+        <a class="btn btn-danger btn-sm" href="{% url 'article_delete' article.id %}"> Delete </a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
